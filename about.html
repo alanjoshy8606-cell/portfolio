@@ -1,0 +1,998 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me | AJfolio</title>
+
+    <meta name="description" content="Learn more about my education, technical interests, projects and career goals.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="Assets/images/logo.png">
+    <script>
+        (function() {
+            var saved = localStorage.getItem('theme');
+            var pref = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+            document.documentElement.setAttribute('data-theme', pref);
+        })();
+    </script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <!-- About CSS -->
+    <link rel="stylesheet" href="Assets/css/about.css">
+</head>
+
+<body class="about-page">
+
+    <!-- Background Effects -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo" aria-label="AlanSpace Home">
+                <img src="Assets/images/logo.png" alt="AlanSpace" class="logo-img">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle white/black background">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+                <a href="Assets/documents/Alan_Joshy_CV.pdf"    
+                   class="nav-resume"
+                   target="_blank"
+                   rel="noopener">
+                    Resume <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+            </div>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="about-hero">
+
+            <div class="container about-hero-grid">
+
+                <div class="about-hero-content reveal">
+
+                    <div class="about-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        GET TO KNOW ME
+                    </div>
+
+                    <h1>
+                        About <span class="gradient-text">Me.</span>
+                    </h1>
+
+                    <p class="about-hero-description">
+                        I am an MCA student with a strong interest in software
+                        development and modern web technologies. I enjoy
+                        learning new technologies, developing useful
+                        applications and turning ideas into working projects.
+                    </p>
+
+                    <div class="about-hero-actions">
+
+                        <a href="Assets/documents/Alan_Joshy_CV.pdf"    
+
+                           class="btn btn-primary"
+                           target="_blank"
+                           rel="noopener">
+                            View My Resume
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/alan-joshy-00505a39b?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-outline" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a>
+
+                    </div>
+
+                    <div class="about-quick-info">
+
+                        <div>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            MCA Student
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            Developer
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Kerala, India
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Profile Card -->
+
+                <div class="about-hero-visual reveal">
+
+                    <div class="about-orbit orbit-a"></div>
+                    <div class="about-orbit orbit-b"></div>
+
+                    <div class="about-image-frame">
+
+                        <div class="image-top-label">
+                            <span class="status-dot"></span>
+                            PERSONAL PROFILE
+                        </div>
+
+                        <div class="about-profile-image">
+                            <img src="Assets/images/profile.png"
+                                 alt="My profile photo"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+
+                            <div class="about-image-fallback">
+                                AJ
+                            </div>
+                        </div>
+
+                        <h2>Alan Joshy</h2>
+
+                        <p>Mahatma Gandhi University Kottayam MCA Student</p>
+
+                        <div class="image-bottom-label">
+                            <span class="label-dot"></span>
+                            LEARN • BUILD • GROW
+                        </div>
+
+                    </div>
+
+                    <div class="floating-note note-top">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <div>
+                            <strong>Web Development</strong>
+                            <small>Building applications</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-note note-bottom">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <div>
+                            <strong>Always Learning</strong>
+                            <small>Exploring new ideas</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about-hero-bottom">
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </section>
+
+
+        <!-- ================= MY STORY ================= -->
+
+        <section class="section about-story-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">01 / MY INTRODUCTION</span>
+                    <h2>My <span class="gradient-text">Story</span></h2>
+                    <p>A little more about my journey and interests.</p>
+                </div>
+
+
+                <div class="story-layout">
+
+                    <div class="story-main-card reveal">
+
+                        <div class="story-card-top">
+                            <span class="card-index">WHO AM I?</span>
+                            <i class="fa-solid fa-user-astronaut"></i>
+                        </div>
+
+                        <h3>
+                            A curious learner with a passion for
+                            <span class="gradient-text">technology.</span>
+                        </h3>
+
+                        <p>
+                            I am currently pursuing my Master of Computer
+                            Applications (MCA) at Santhigiri College of
+                            Computer Sciences, affiliated with Mahatma Gandhi
+                            University, Kottayam.
+                        </p>
+
+                        <p>
+                            My interest in computer science has encouraged
+                            me to explore programming, database management
+                            and web application development.
+                        </p>
+
+                        <p>
+                            I have practical experience working with
+                            technologies such as Python, Django, PHP,
+                            Laravel and MySQL through academic and personal
+                            projects.
+                        </p>
+
+                        <p>
+                            I believe in continuous learning, improving my
+                            technical knowledge and developing solutions
+                            that are useful in real-world situations.
+                        </p>
+
+                        <a href="index.html#projects" class="story-link">
+                            Explore My Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="story-side">
+
+                        <div class="story-info-card reveal">
+
+                            <div class="story-info-icon purple-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+
+                            <div>
+                                <span>EDUCATION</span>
+                                <h4>Master of Computer Applications</h4>
+                                <p>Santhigiri College of Computer Sciences</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="story-info-card reveal">
+
+                            <div class="story-info-icon blue-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+
+                            <div>
+                                <span>INTEREST</span>
+                                <h4>Software Development</h4>
+                                <p>Python, Laravel and Web Technologies</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="story-info-card reveal">
+
+                            <div class="story-info-icon cyan-icon">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+
+                            <div>
+                                <span>CAREER GOAL</span>
+                                <h4>Software Developer</h4>
+                                <p>Building practical software solutions</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAREER OBJECTIVE ================= -->
+
+        <section class="section objective-section">
+
+            <div class="container">
+
+                <div class="objective-card reveal">
+
+                    <div class="objective-content">
+
+                        <span class="section-label">MY CAREER OBJECTIVE</span>
+
+                        <h2>
+                            Learning Today.
+                            <span class="gradient-text">Building Tomorrow.</span>
+                        </h2>
+
+                        <p>
+                            My goal is to build a career in software
+                            development where I can apply my programming
+                            knowledge, improve my technical skills, work
+                            on challenging projects and contribute to
+                            meaningful software solutions.
+                        </p>
+
+                    </div>
+
+                    <div class="objective-decoration">
+                        <div class="objective-circle circle-one"></div>
+                        <div class="objective-circle circle-two"></div>
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section class="section education-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">02 / ACADEMIC BACKGROUND</span>
+                    <h2>My <span class="gradient-text">Education</span></h2>
+                    <p>My academic journey and qualifications.</p>
+                </div>
+
+
+                <div class="education-timeline">
+
+                    <div class="education-item reveal">
+
+                        <div class="education-marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div class="education-card">
+
+                            <div class="education-top">
+                                <span class="education-level">POSTGRADUATE</span>
+                                <span class="education-score">82%</span>
+                            </div>
+
+                            <h3>Master of Computer Applications</h3>
+
+                            <h4>Santhigiri College of Computer Sciences</h4>
+
+                            <p>
+                                Currently pursuing MCA and developing
+                                advanced knowledge in computer applications,
+                                programming and software development.
+                            </p>
+
+                            <span class="education-period">2025 – Present</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item reveal">
+
+                        <div class="education-marker">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+
+                        <div class="education-card">
+
+                            <div class="education-top">
+                                <span class="education-level">UNDERGRADUATE</span>
+                                <span class="education-score">65%</span>
+                            </div>
+
+                            <h3>Bachelor of Computer Applications</h3>
+
+                            <h4>Santhigiri College of Computer Sciences</h4>
+
+                            <p>
+                                Studied computer applications and developed
+                                a foundation in programming, databases and
+                                computer science.
+                            </p>
+
+                            <span class="education-period">2022 – 2025</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item reveal">
+
+                        <div class="education-marker">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+
+                        <div class="education-card">
+
+                            <div class="education-top">
+                                <span class="education-level">HIGHER SECONDARY</span>
+                                <span class="education-score">86%</span>
+                            </div>
+
+                            <h3>Higher Secondary Education</h3>
+
+                            <h4>St. George Higher Secondary School</h4>
+
+                            <p>
+                                Completed higher secondary education and
+                                developed an academic foundation for
+                                further studies.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item reveal">
+
+                        <div class="education-marker">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <div class="education-card">
+
+                            <div class="education-top">
+                                <span class="education-level">SECONDARY</span>
+                                <span class="education-score">90%</span>
+                            </div>
+
+                            <h3>SSLC</h3>
+
+                            <h4>GHSS West Kodikulam</h4>
+
+                            <p>
+                                Completed secondary school education.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TECHNICAL INTERESTS ================= -->
+
+        <section class="section interests-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">03 / WHAT I WORK WITH</span>
+                    <h2>Technical <span class="gradient-text">Interests</span></h2>
+                    <p>Technologies and tools I have learned and explored.</p>
+                </div>
+
+
+                <div class="interest-grid">
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon python-icon">Py</div>
+                        <h3>Python</h3>
+                        <p>Programming and application development</p>
+                    </div>
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon django-icon">Dj</div>
+                        <h3>Django</h3>
+                        <p>Python-based web development</p>
+                    </div>
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon php-icon">PHP</div>
+                        <h3>PHP</h3>
+                        <p>Server-side programming</p>
+                    </div>
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon laravel-icon">L</div>
+                        <h3>Laravel</h3>
+                        <p>Web application development</p>
+                    </div>
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon mysql-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3>MySQL</h3>
+                        <p>Database design and management</p>
+                    </div>
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon c-icon">C</div>
+                        <h3>C Programming</h3>
+                        <p>Programming fundamentals</p>
+                    </div>
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon linux-icon">
+                            <i class="fa-brands fa-linux"></i>
+                        </div>
+                        <h3>Linux</h3>
+                        <p>Operating system fundamentals</p>
+                    </div>
+
+                    <div class="interest-card reveal">
+                        <div class="interest-icon web-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive web interfaces</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section about-projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">04 / MY WORK</span>
+                    <h2>Academic & <span class="gradient-text">Personal Projects</span></h2>
+                    <p>Some of the projects I have worked on.</p>
+                </div>
+
+
+                <div class="about-project-grid">
+
+                    <!-- Project 1: E-Commerce System for Toy Store -->
+                    <article class="about-project-card reveal">
+
+                        <div class="about-project-art art-toystore">
+                            <span class="project-art-number">01</span>
+                            <i class="fa-solid fa-shapes"></i>
+                            <span class="art-caption">ONLINE TOY STORE &amp; E-COMMERCE</span>
+                        </div>
+
+                        <div class="about-project-body">
+                            <span class="project-type">WEB APPLICATION / E-COMMERCE</span>
+                            <h3>E-Commerce System for Toy Store</h3>
+                            <p>
+                                The E-Commerce System for Toy Store is an online shopping platform developed to make buying toys easier and more convenient. Users can explore different toy products, view product details, add items to their shopping cart, and place orders online. The system also provides user authentication, payment handling, and order management features.
+                            </p>
+
+                            <div class="about-project-features">
+                                <span class="features-title"><i class="fa-solid fa-layer-group"></i> Key Features:</span>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i> Online toy product catalog.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Product details and categories.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Shopping cart functionality.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> User registration and login.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Order management system.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Payment handling features.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Responsive and user-friendly design.</li>
+                                </ul>
+                            </div>
+
+                            <div class="about-project-tech-header">
+                                <i class="fa-solid fa-code"></i> Technologies Used:
+                            </div>
+                            <div class="about-project-tags">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2: Career Guidance Portal -->
+                    <article class="about-project-card reveal">
+
+                        <div class="about-project-art art-career">
+                            <span class="project-art-number">02</span>
+                            <i class="fa-solid fa-compass"></i>
+                            <span class="art-caption">STUDENT GUIDANCE PLATFORM</span>
+                        </div>
+
+                        <div class="about-project-body">
+                            <span class="project-type">WEB APPLICATION / CAREER GUIDANCE</span>
+                            <h3>Career Guidance Portal</h3>
+                            <p>
+                                The Career Guidance Portal is a web-based application designed to help students choose the right career path based on their interests and goals. It provides information about different career opportunities, courses, and educational details. The system also includes user management features and an easy-to-use interface to help students make better career decisions.
+                            </p>
+
+                            <div class="about-project-features">
+                                <span class="features-title"><i class="fa-solid fa-layer-group"></i> Key Features:</span>
+                                <ul>
+                                    <li><i class="fa-solid fa-circle-check"></i> Career information and guidance.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Course and educational details.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> User management system.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Responsive and user-friendly interface.</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Easy navigation and information access.</li>
+                                </ul>
+                            </div>
+
+                            <div class="about-project-tech-header">
+                                <i class="fa-solid fa-code"></i> Technologies Used:
+                            </div>
+                            <div class="about-project-tags">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CERTIFICATION & LANGUAGES ================= -->
+
+        <section class="section extra-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">05 / ADDITIONAL DETAILS</span>
+                    <h2>More <span class="gradient-text">About Me</span></h2>
+                    <p>Certification and languages.</p>
+                </div>
+
+
+                <div class="extra-grid">
+
+                    <!-- 1. Cloud Computing -->
+                    <div class="extra-card reveal">
+                        <div class="extra-card-heading">
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+                            <span>NPTEL • IIT KHARAGPUR</span>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <p class="certificate-provider">
+                            IIT Kharagpur & Swayam • Score: 70% (Elite)
+                        </p>
+                        <p class="certificate-description">
+                            Completed a 12-week comprehensive program on cloud architectures, virtualization, resource allocation, storage systems, and scalable distributed computing across 46,000+ candidates.
+                        </p>
+                        <div class="certificate-detail">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            July – October 2026 • 4 Credits
+                        </div>
+                        <div class="certificate-footer">
+                            <a href="Assets/documents/Cloud_Computing_NPTEL_IIT_Kharagpur.pdf"
+                               class="certificate-link"
+                               target="_blank"
+                               rel="noopener">
+                                <span>VIEW CREDENTIAL</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <span class="certificate-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. Machine Learning Using Python -->
+                    <div class="extra-card reveal">
+                        <div class="extra-card-heading">
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <span>SIMPLILEARN SKILLUP</span>
+                        </div>
+                        <h3>Machine Learning Using Python</h3>
+                        <p class="certificate-provider">
+                            Simplilearn • Code: 11024337
+                        </p>
+                        <p class="certificate-description">
+                            Mastered core concepts of Machine Learning with Python, including supervised and unsupervised learning algorithms, model building, feature engineering, and predictive data analysis.
+                        </p>
+                        <div class="certificate-detail">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Completed 12th November 2026
+                        </div>
+                        <div class="certificate-footer">
+                            <a href="Assets/documents/Machine_Learning_Using_Python_Simplilearn.pdf"
+                               class="certificate-link"
+                               target="_blank"
+                               rel="noopener">
+                                <span>VIEW CREDENTIAL</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <span class="certificate-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. AI-Powered DevOps -->
+                    <div class="extra-card reveal">
+                        <div class="extra-card-heading">
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <span>KODEKLOUD</span>
+                        </div>
+                        <h3>Crash Course: AI-Powered DevOps</h3>
+                        <p class="certificate-provider">
+                            KodeKloud • ID: a9767da6-c2a2
+                        </p>
+                        <p class="certificate-description">
+                            Hands-on training in modern DevOps workflows accelerated by Artificial Intelligence, including automated CI/CD pipelines, containerization, intelligent testing, and deployment monitoring.
+                        </p>
+                        <div class="certificate-detail">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Completed 12th November 2026
+                        </div>
+                        <div class="certificate-footer">
+                            <a href="Assets/documents/AI_Powered_DevOps_KodeKloud.pdf"
+                               class="certificate-link"
+                               target="_blank"
+                               rel="noopener">
+                                <span>VIEW CREDENTIAL</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <span class="certificate-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Python Django 101 -->
+                    <div class="extra-card reveal">
+                        <div class="extra-card-heading">
+                            <div class="extra-icon">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <span>SIMPLILEARN SKILLUP</span>
+                        </div>
+                        <h3>Python Django 101</h3>
+                        <p class="certificate-provider">
+                            Simplilearn • Code: 11023321
+                        </p>
+                        <p class="certificate-description">
+                            Learned backend web application engineering using Python and the Django framework, focusing on MVT architectural design, database ORM, URL routing, and dynamic templating.
+                        </p>
+                        <div class="certificate-detail">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Completed 12th November 2026
+                        </div>
+                        <div class="certificate-footer">
+                            <a href="Assets/documents/Python_Django_101_Simplilearn.pdf"
+                               class="certificate-link"
+                               target="_blank"
+                               rel="noopener">
+                                <span>VIEW CREDENTIAL</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <span class="certificate-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. Introduction to Cyber Security -->
+                    <div class="extra-card reveal">
+                        <div class="extra-card-heading">
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <span>SIMPLILEARN SKILLUP</span>
+                        </div>
+                        <h3>Introduction to Cyber Security</h3>
+                        <p class="certificate-provider">
+                            Simplilearn • Code: 11022909
+                        </p>
+                        <p class="certificate-description">
+                            Foundational cybersecurity training covering digital threat landscapes, network security protocols, cryptography essentials, defense strategies, and vulnerability mitigation.
+                        </p>
+                        <div class="certificate-detail">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Completed 12th November 2026
+                        </div>
+                        <div class="certificate-footer">
+                            <a href="Assets/documents/Introduction_to_Cyber_Security_Simplilearn.pdf"
+                               class="certificate-link"
+                               target="_blank"
+                               rel="noopener">
+                                <span>VIEW CREDENTIAL</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <span class="certificate-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Languages -->
+                    <div class="extra-card reveal">
+                        <div class="extra-card-heading">
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <span>LANGUAGES</span>
+                        </div>
+                        <h3>Languages I Speak</h3>
+                        <p class="language-description">
+                            Languages included in my academic profile.
+                        </p>
+                        <div class="language-item" style="margin-top: 15px;">
+                            <div>
+                                <span>English</span>
+                                <small>Professional working proficiency</small>
+                            </div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="language-item">
+                            <div>
+                                <span>Malayalam</span>
+                                <small>Native language</small>
+                            </div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT CTA ================= -->
+
+        <section class="section about-cta-section">
+
+            <div class="container">
+
+                <div class="about-cta-card reveal">
+
+                    <div class="about-cta-content">
+
+                        <span class="section-label">LET'S CONNECT</span>
+
+                        <h2>
+                            Have an idea?
+                            <span class="gradient-text">Let's build it.</span>
+                        </h2>
+
+                        <p>
+                            I am interested in learning, exploring new
+                            opportunities and connecting with people in
+                            technology. Feel free to get in touch.
+                        </p>
+
+                        <div class="about-cta-actions">
+                            <a href="https://www.linkedin.com/in/alan-joshy-00505a39b?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-primary" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                            </a>
+                            <a href="mailto:alanjoshy.dev@gmail.com" class="btn btn-outline" title="Email Alan">
+                                <i class="fa-solid fa-envelope"></i> Email Me
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="cta-symbol">
+                        AJ
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="cta-glow"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo" aria-label="AlanSpace Home">
+                <img src="Assets/images/logo.png" alt="AlanSpace" class="logo-img">
+            </a>
+
+            <p>
+                Designed & developed with passion by
+                <strong>Alan Joshy</strong>.
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/alan-joshy-00505a39b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="Connect on LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:alanjoshy.dev@gmail.com" aria-label="Email" title="Email Alan Joshy">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <p>
+                © <span id="year"></span> AJfolio. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back To Top -->
+
+    <button class="back-to-top"
+            id="backToTop"
+            type="button"
+            aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="Assets/js/script.js"></script>
+
+</body>
+</html>

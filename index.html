@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alan Joshy - MCA student and aspiring software developer. Explore my skills, projects and portfolio.">
+
+    <title>AJfolio | Alan Joshy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="Assets/images/logo.png">
+    <script>
+        (function() {
+            var saved = localStorage.getItem('theme');
+            var pref = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+            document.documentElement.setAttribute('data-theme', pref);
+        })();
+    </script>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo" aria-label="AlanSpace Home">
+                <img src="Assets/images/logo.png" alt="AlanSpace" class="logo-img">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html#skills">Skills</a></li>
+                <li><a href="about.html#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle white/black background">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+                <a href="Assets/documents/Alan_Joshy_Resume_ATS.pdf"
+                   class="nav-resume" target="_blank" rel="noopener">
+                    My Resume <span>↗</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Available for opportunities
+                    </div>
+
+                    <p class="intro-text">HELLO, I'M</p>
+
+                    <h1>
+                        Alan <span class="gradient-text">Joshy</span>
+                    </h1>
+
+                    <h2>
+                        I'm an <span id="typingText">MCA Student</span>
+                        <span class="typing-cursor">|</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I enjoy building modern websites and practical
+                        software solutions. I turn ideas into clean,
+                        functional and user-friendly digital experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="about.html#projects" class="btn btn-primary">
+                            Explore My Work <span>↗</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/alan-joshy-00505a39b?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/alan-joshy-00505a39b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"
+                           rel="noopener noreferrer" aria-label="LinkedIn" title="Connect on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank"
+                           rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:alanjoshy.dev@gmail.com"
+                           aria-label="Email" title="Email Alan Joshy">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Visual -->
+                <div class="hero-visual reveal">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="profile-card">
+                        <div class="profile-top">
+                            <span class="profile-label">MY PROFILE</span>
+                            <span class="profile-menu">•••</span>
+                        </div>
+
+                        <div class="profile-image">
+                            <img src="Assets/images/profile.jpg"
+                                 alt="Alan Joshy profile photo"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+
+                            <div class="profile-fallback">AJ</div>
+                        </div>
+
+                        <h3>Alan Joshy</h3>
+                        <p>MCA Student | Aspiring Developer</p>
+
+                        <div class="profile-tags">
+                            <span>Python</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <div class="profile-bottom">
+                            <div>
+                                <strong>01+</strong>
+                                <small>Years Learning</small>
+                            </div>
+                            <div>
+                                <strong>02</strong>
+                                <small>Projects</small>
+                            </div>
+                            <div>
+                                <strong>08+</strong>
+                                <small>Skills</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-code">
+                        <span class="floating-icon">⌘</span>
+                        <div>
+                            <strong>Clean Code</strong>
+                            <small>Build with purpose</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-tech">
+                        <span>✦</span>
+                        <strong>Creative Developer</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span></span> Scroll to explore
+            </a>
+        </section>
+
+       
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo" aria-label="AlanSpace Home">
+                <img src="Assets/images/logo.png" alt="AlanSpace" class="logo-img">
+            </a>
+
+            <p>Designed & Developed by <strong>Alan Joshy</strong></p>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/alan-joshy-00505a39b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="Connect on LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:alanjoshy.dev@gmail.com" aria-label="Email" title="Email Alan Joshy">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <p>© <span id="year"></span> AJfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"
+        aria-label="Back to top">↑</button>
+
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>
