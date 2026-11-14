@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Alan Joshy - MCA student and software developer based in Mukalel (H), Idukki. Get in touch via WhatsApp, Email, LinkedIn, or GitHub.">
+
+    <title>Contact | Alan Joshy - AJfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="Assets/images/logo.png">
+    <script>
+        (function() {
+            var saved = localStorage.getItem('theme');
+            var pref = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+            document.documentElement.setAttribute('data-theme', pref);
+        })();
+    </script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <!-- About CSS for layout helpers -->
+    <link rel="stylesheet" href="Assets/css/about.css">
+</head>
+<body class="about-page">
+
+    <!-- Background Effects -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo" aria-label="AlanSpace Home">
+                <img src="Assets/images/logo.png" alt="AlanSpace" class="logo-img">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html#skills">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle white/black background">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <!-- ================= CONTACT HERO ================= -->
+        <section class="about-hero" style="min-height: auto; padding: 75px 0 45px;">
+            <div class="container">
+                <div class="about-hero-content reveal">
+                    <div class="about-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        GET IN TOUCH
+                    </div>
+
+                    <h1>
+                        Contact <span class="gradient-text">Me.</span>
+                    </h1>
+
+                    <p class="about-hero-description">
+                        Have an idea, project inquiry, opportunity, or just want to say hi? I'm always eager to collaborate and connect with people in tech. Reach out via any of the options below!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT CARDS GRID ================= -->
+        <section class="section" style="padding-top: 10px; padding-bottom: 90px;">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">CONTACT INFORMATION</span>
+                    <h2>Ways to <span class="gradient-text">Connect</span></h2>
+                    <p>Direct communication channels and social profiles.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Location Card -->
+                    <div class="contact-info-card reveal">
+                        <div class="contact-icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="contact-label">Location / Address</span>
+                        <div class="contact-value">Mukalel (H), Idukki</div>
+                        <p class="contact-desc">Kerala, India • Available for local and remote opportunities.</p>
+                        <a href="https://maps.google.com/?q=Idukki,+Kerala" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                            View on Map <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-info-card reveal">
+                        <div class="contact-icon-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="contact-label">Email</span>
+                        <div class="contact-value">alanjoshymukalel8606@gmail.com</div>
+                        <p class="contact-desc">Send me an email for project discussions, questions, or opportunities.</p>
+                        <a href="mailto:alanjoshymukalel8606@gmail.com" class="contact-action-link">
+                            Send Email <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- WhatsApp Card -->
+                    <div class="contact-info-card reveal">
+                        <div class="contact-icon-box">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span class="contact-label">WhatsApp</span>
+                        <div class="contact-value">+91 8606844054</div>
+                        <p class="contact-desc">Quick messages, queries, or instant communication.</p>
+                        <a href="https://wa.me/918606844054" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                            Chat on WhatsApp <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="contact-info-card reveal">
+                        <div class="contact-icon-box">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <span class="contact-label">LinkedIn</span>
+                        <div class="contact-value">Alan Joshy</div>
+                        <p class="contact-desc">Professional network, recommendations, and career updates.</p>
+                        <a href="https://www.linkedin.com/in/alan-joshy-00505a39b" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                            Connect on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="contact-info-card reveal">
+                        <div class="contact-icon-box">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <span class="contact-label">GitHub</span>
+                        <div class="contact-value">alanjoshy8606-cell</div>
+                        <p class="contact-desc">Explore repositories, projects, code samples, and open-source work.</p>
+                        <a href="https://github.com/alanjoshy8606-cell" target="_blank" rel="noopener noreferrer" class="contact-action-link">
+                            Visit GitHub Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo" aria-label="AlanSpace Home">
+                <img src="Assets/images/logo.png" alt="AlanSpace" class="logo-img">
+            </a>
+
+            <p>
+                Designed & developed with passion by
+                <strong>Alan Joshy</strong>.
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/alan-joshy-00505a39b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="Connect on LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/alanjoshy8606-cell" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:alanjoshymukalel8606@gmail.com" aria-label="Email" title="Email Alan Joshy">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/918606844054" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <p>
+                © <span id="year"></span> AJfolio. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Back To Top -->
+    <button class="back-to-top"
+            id="backToTop"
+            type="button"
+            aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="Assets/js/script.js"></script>
+
+</body>
+</html>
