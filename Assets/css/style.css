@@ -1582,3 +1582,14 @@ button {
 [data-theme="light"] .contact-info-card .contact-action-link:hover {
     color: #0f172a;
 }
+
+/* Footer Phone Link */
+.footer-phone-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-phone-link:hover {
+    color: var(--cyan);
+}

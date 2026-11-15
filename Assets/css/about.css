@@ -1652,3 +1652,24 @@
     background: rgba(124, 58, 237, 0.12);
     border-color: #6366f1;
 }
+
+.cta-logo-img {
+    width: 105px;
+    height: 105px;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.45));
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
+    user-select: none;
+    pointer-events: none;
+}
+
+.about-cta-card:hover .cta-logo-img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 24px rgba(85, 230, 208, 0.7));
+}
+
+[data-theme="light"] .cta-logo-img {
+    filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.25));
+}
