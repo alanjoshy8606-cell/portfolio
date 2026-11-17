@@ -732,6 +732,7 @@
 .art-hills { background: linear-gradient(135deg, #093722, #162a3f); }
 .art-toystore { background: linear-gradient(135deg, #134e5e, #1c283e); }
 .art-career { background: linear-gradient(135deg, #513a82, #202846); }
+.art-heart { background: linear-gradient(135deg, #781232, #210d1f); }
 
 .about-project-art > i {
     position: relative;
@@ -1672,4 +1673,115 @@
 
 [data-theme="light"] .cta-logo-img {
     filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.25));
+}
+
+
+/* =====================================
+   LIGHT THEME OVERRIDES FOR ABOUT PAGE
+===================================== */
+[data-theme="light"] .about-image-frame {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, 0.1) !important;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08) !important;
+}
+
+[data-theme="light"] .about-image-frame h2 {
+    color: #0f172a;
+}
+
+[data-theme="light"] .about-image-frame > p {
+    color: #475569;
+}
+
+[data-theme="light"] .floating-note {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08) !important;
+    color: #0f172a;
+}
+
+[data-theme="light"] .floating-note strong {
+    color: #0f172a;
+}
+
+[data-theme="light"] .floating-note small {
+    color: #64748b;
+}
+
+[data-theme="light"] .objective-card {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, 0.1) !important;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06) !important;
+}
+
+[data-theme="light"] .objective-content h2 {
+    color: #0f172a;
+}
+
+[data-theme="light"] .objective-content p {
+    color: #475569;
+}
+
+[data-theme="light"] .objective-decoration > i {
+    color: rgba(124, 58, 237, 0.12);
+}
+
+[data-theme="light"] .objective-circle {
+    border-color: rgba(124, 58, 237, 0.12);
+}
+
+[data-theme="light"] .circle-two {
+    background: rgba(124, 58, 237, 0.04);
+}
+
+[data-theme="light"] .about-cta-card {
+    background: #ffffff !important;
+    border-color: rgba(15, 23, 42, 0.1) !important;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06) !important;
+}
+
+[data-theme="light"] .about-cta-content h2 {
+    color: #0f172a;
+}
+
+[data-theme="light"] .about-cta-content p {
+    color: #475569;
+}
+
+[data-theme="light"] .about-cta-actions .btn-outline {
+    background: #f8fafc;
+    border-color: rgba(15, 23, 42, 0.18);
+    color: #1e293b;
+}
+
+[data-theme="light"] .about-cta-actions .btn-outline:hover {
+    background: rgba(124, 58, 237, 0.08);
+    border-color: #7c3aed;
+    color: #7c3aed;
+}
+
+[data-theme="light"] .cta-symbol {
+    color: rgba(124, 58, 237, 0.12);
+}
+
+[data-theme="light"] .cta-symbol::before,
+[data-theme="light"] .cta-symbol::after {
+    border-color: rgba(124, 58, 237, 0.15);
+}
+
+[data-theme="light"] .cta-glow {
+    background: rgba(124, 58, 237, 0.05);
+}
+
+[data-theme="light"] .education-marker {
+    background: #ffffff;
+    border-color: rgba(2, 132, 199, 0.35);
+    color: #0284c7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .interest-card:hover {
+    background: #ffffff;
+    border-color: rgba(2, 132, 199, 0.4);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
 }
